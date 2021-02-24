@@ -1,9 +1,9 @@
-name: 'Compress Files'
-description: 'A GitHub Action for compressing files using Brotli or GZip compression.'
+name: 'Compress Files and Replace Then'
+description: 'A GitHub Action for compressing files using Brotli or GZip compression and replace then.'
 author: 'ThiagoJaweb'
 branding:
   icon: 'archive'  
-  color: 'purple'
+  color: 'green'
 inputs:
   path:
     description: 'The path'
