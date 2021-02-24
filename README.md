@@ -30,7 +30,7 @@ Maximum folder depth to process. Default this is set to `3`
 
 ``` yml
 - name: CompressFiles
-  uses: stefh/ghaction-CompressFiles@v1
+  uses: ThiagoJaweb/ghaction-CompressFiles@v1.0.3
   with:
     path: ${{ env.PUBLISH_DIR }}
     extensions: '.js,.css,.html'
