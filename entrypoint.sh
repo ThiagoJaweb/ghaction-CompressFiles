@@ -14,11 +14,11 @@ do
     do
         case $TOOL in
             gzip)
-                `find $1 -maxdepth $DEPTH -type f -name "*$FILE_EXT" -exec gzip -k -f {} \;`
+                `find $1 -maxdepth $DEPTH -type f -name "*$FILE_EXT" -exec gzip -k -f {} \; -exec mv "{}.gz" "{}" \;`
                 ;;
                 
             brotli)
-                `find $1 -maxdepth $DEPTH -type f -name "*$FILE_EXT" -exec brotli -f {} \;`
+                `find $1 -maxdepth $DEPTH -type f -name "*$FILE_EXT" -exec brotli -f {} \;  -exec mv "{}.br" "{}" \;`
                 ;;
                 
             *)
